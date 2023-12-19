@@ -9,6 +9,7 @@ pipeline {
              steps{
                 sh('echo My DB password is: ${DB_PASSWORD}')
              }
+
              
         }
 
