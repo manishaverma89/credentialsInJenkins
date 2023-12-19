@@ -1,0 +1,18 @@
+pipeline {
+    agent any
+    environment {
+        MANI-SSH-KEY = credentials('MANISHA-SSH')
+    }
+
+    stages{
+        stage('Accessing Credentials'){
+             steps{
+                sh ('echo username for SSH  is: ${MANI-SSH-KEY_USR}')
+                sh ('echo my-ssh-key is: ${MANI-SSH-KEY_PSW}')
+             }
+             
+             
+        }
+
+    }
+}
