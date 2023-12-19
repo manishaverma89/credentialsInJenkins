@@ -1,0 +1,18 @@
+pipeline {
+    agent any
+    environment {
+        MANISHA_SECRET_FILE = credentials('manishasecretfile')
+    }
+
+    stages{
+        stage('Accessing Credentials'){
+             steps{
+                sh ('echo My secretfiledata is: ${MANISHA_SECRET_FILE}')
+
+             }
+             
+             
+        }
+
+    }
+}
