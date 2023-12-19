@@ -10,7 +10,7 @@ pipeline {
              steps{
                 sh ('echo My DB password is: ${DB_PASSWORD}')
                 sh ('echo username is: ${MANISHA_USERNAME_PASSWORD_USR}')
-                sh ('echo password is: ${MANISHA_USERNAME_PASSWORD_PSW}')
+                sh ('echo mypaswrd is: ${MANISHA_USERNAME_PASSWORD_PSW}')
              }
              
              
