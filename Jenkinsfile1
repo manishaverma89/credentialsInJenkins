@@ -8,6 +8,7 @@ pipeline {
         stage('Accessing Credentials'){
              steps{
                 sh('echo My DB password is: ${DB_PASSWORD}')
+
              }
              
         }
