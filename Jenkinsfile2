@@ -1,0 +1,19 @@
+pipeline {
+    agent any
+    environment {
+        DB_PASSWORD = credentials('databasepassword')
+        MANISHA_username_password = credentials('maniUsrPwd')
+    }
+
+    stages{
+        stage('Accessing Credentials'){
+             steps{
+                sh ('echo My DB password is: ${DB_PASSWORD}')
+                sh ('Manisha username is: ${MANISHA_username_password_USR}')
+                Sh ('Manisha password is: ${MANISHA_username_password_PSW}')
+             }
+             
+        }
+
+    }
+}
