@@ -8,7 +8,13 @@ pipeline {
         stage('Accessing Credentials'){
              steps{
                 sh('echo My DB password is: ${DB_PASSWORD}')
+<<<<<<< HEAD
              }     
+=======
+             }
+
+             
+>>>>>>> store_ssh_username_with_key
         }
 
     }
